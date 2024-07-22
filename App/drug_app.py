@@ -1,7 +1,7 @@
 import gradio as gr
 import skops.io as sio
 
-pipe = sio.load("./Model/drug_pipeline.skops", trusted=untrusted_types)
+pipe = sio.load("./Model/drug_pipeline.skops")
 
 
 def predict_drug(age, sex, blood_pressure, cholesterol, na_to_k_ratio):
