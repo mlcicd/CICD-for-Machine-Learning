@@ -1,3 +1,4 @@
+name: CDK_DESTROY_WORKFLOW_DISPATCH
 on:
   workflow_dispatch:
     inputs:
