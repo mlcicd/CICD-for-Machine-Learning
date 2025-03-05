@@ -1,0 +1,21 @@
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: 'Action to perform'
+        required: true
+        type: choice
+        options:
+        - deploy
+        - destroy
+      environment:
+        description: 'Environment'
+        required: true
+        type: choice
+        options:
+        - dev
+        - prod
+      confirm_destroy:
+        description: 'Type "DESTROY" to confirm (case-sensitive, only for destroy action)'
+        required: false
+        type: string
